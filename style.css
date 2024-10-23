@@ -1,0 +1,158 @@
+ body{
+    background-color: black;
+} 
+/* General page styling */
+.signup-page {
+    display: flex;
+    justify-content: space-between; /* Keep image and form side by side */
+    align-items: center; /* Align content vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 0px 50px;  /* Add some padding to the sides */
+  
+}
+
+/* Image container styling */
+.image-container {
+    flex: 1; /* Take up equal space with the form */
+    height: 100%;
+    position: relative;
+}
+header{
+    background-color: rgba(128, 128, 128, 0.174);
+    padding: 20px 30px;
+
+}
+
+.signup-image {
+    width: 100%; /* Make the image take up the full container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Ensure the image covers the entire space proportionally */
+    position: absolute;
+    z-index: -1;
+}
+legend{
+    font-size: large;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* Form container styling */
+.signup-form {
+    flex: 1; /* Form takes up half the page */
+     background-color:  white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.signup-body {
+    
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between form fields in the same row */
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    flex: 1;
+}
+
+ input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #596d481d;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px #596d4866;
+    
+}
+
+input[type="password"]:focus{
+   border: red 3px solid;
+    
+    
+}
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+input:focus + .error-message,
+input:focus:invalid + .error-message {
+    display: block; /* Show the message when the input is focused and invalid */
+}
+
+/* Button Styling */
+.create-btn {
+    background-color: #596d48fa;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+}
+.create-btn:hover {
+    background-color:#596d4881;
+}
+
+/* Responsive adjustments */
+@media (max-width: 796px) {
+    .signup-page {
+        flex-direction: column; /* Stack image and form vertically on small screens */
+    }
+
+    .image-container, .image-two,
+    .signup-form {
+        width: 100%; 
+    }
+
+    .form-row {
+        flex-direction: column;
+}
+}
+.image-two {
+    position: relative;
+    width: 90%; /* Adjust width to 30% of the background image's width */
+    height: auto;
+    padding: 20px; /* Adjust padding for a balanced look */
+    background: rgba(0, 0, 0, 0.525);
+    opacity: 0.7;
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    display: flex;
+    z-index: 1; /* Make sure it's above the signup image */
+    border-radius: 6px; 
+    justify-content: center;
+    
+}
+
+
+.logo-imag {
+    width: 20%; /* Adjust logo width relative to the smaller box */
+    height: auto; 
+}
+.image-two em{
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px; 
+    font-family: "press start 2p";
+    color: #ffffff;
+    margin:  20px;
+
+}

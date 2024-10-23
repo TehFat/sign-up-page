@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Oleo+Script:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-page">
+        <div class="image-container">
+            <img src="leave.avif" alt="Signup Image" class="signup-image">
+            <div class="image-two">
+    <img src="odin-lined.png" alt="logo" class="logo-imag"><em>ODIN</em>
+            </div>
+        </div>
+    
+        <div class="signup-form">
+            <header>
+                <p>This is not a real online service! You know you need something  like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <h3>You <em>Know</em> you want to.</h3>
+            </header>
+    <br>
+            <main class="signup-body">
+                <form action="#">
+                    <legend><em>Let's do this</em>!</legend>
+                    <br>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Your first name..">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="At least 8 characters" required maxlength="8">
+                            
+    
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"  required  maxlength="8">
+                            <span class="error-message">Passwords do not match.</span>
+    
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="create-btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
